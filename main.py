@@ -19,7 +19,7 @@ if not MODEL:
     raise ValueError("MODEL is missing from your .env file.")
 
 # ===== Prompt (change only this file name between iterations) =====
-PROMPT_PATH = BASE_DIR / "prompts" / "v1.md"
+PROMPT_PATH = BASE_DIR / "prompts" / "v2.md"
 if not PROMPT_PATH.exists():
     raise FileNotFoundError(f"Prompt file not found: {PROMPT_PATH}")
 SYSTEM_PROMPT = PROMPT_PATH.read_text(encoding="utf-8")
